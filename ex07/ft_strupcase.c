@@ -1,40 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_lowercase.c                              :+:      :+:    :+:   */
+/*   ft_strupcase.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ydumaine <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/18 23:48:12 by ydumaine          #+#    #+#             */
-/*   Updated: 2022/01/19 12:28:26 by ydumaine         ###   ########.fr       */
+/*   Created: 2022/01/19 12:31:36 by ydumaine          #+#    #+#             */
+/*   Updated: 2022/01/19 12:48:35 by ydumaine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_lowercase(char *str)
+char	*ft_strupcase(char *str)
 {
 	int	i;
 	int	c;
 
 	i = 0;
 	c = 1;
-	if (str[i] == '\0')
-		return (1);
-	else
+	while (str[i] != '\0')
 	{
-		while (str[i] != '\0')
+		if (((str[i] >= 97) && (str[i] <= 122)))
 		{
-			if ((str[i] >= 97) && (str[i] <= 122))
-			{
-				i++;
-				c = 1;
-			}
-			else
-			{
-				c = 0;
-				return (c);
-				break ;
-			}
+			str[i] = str[i] - 32;
 		}
-		return (c);
+		i++;
 	}
+	return (str);
 }

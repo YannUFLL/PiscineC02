@@ -6,11 +6,9 @@
 /*   By: ydumaine <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/18 17:43:47 by ydumaine          #+#    #+#             */
-/*   Updated: 2022/01/18 23:42:36 by ydumaine         ###   ########.fr       */
+/*   Updated: 2022/01/19 12:29:00 by ydumaine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
 
 int	ft_str_is_alpha(char *str)
 {

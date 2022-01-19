@@ -6,13 +6,9 @@
 /*   By: ydumaine <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/18 17:43:47 by ydumaine          #+#    #+#             */
-/*   Updated: 2022/01/18 20:10:02 by ydumaine         ###   ########.fr       */
+/*   Updated: 2022/01/19 12:29:36 by ydumaine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
-
-void	ft_putstr(char *str);
 
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {

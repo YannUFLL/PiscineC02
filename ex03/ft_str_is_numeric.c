@@ -6,11 +6,9 @@
 /*   By: ydumaine <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/18 23:44:32 by ydumaine          #+#    #+#             */
-/*   Updated: 2022/01/18 23:46:36 by ydumaine         ###   ########.fr       */
+/*   Updated: 2022/01/19 12:28:43 by ydumaine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
 
 int	ft_str_is_numeric(char *str)
 {

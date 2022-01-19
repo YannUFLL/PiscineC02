@@ -6,11 +6,9 @@
 /*   By: ydumaine <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/18 17:43:47 by ydumaine          #+#    #+#             */
-/*   Updated: 2022/01/18 20:55:03 by ydumaine         ###   ########.fr       */
+/*   Updated: 2022/01/19 12:29:54 by ydumaine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
 
 char	*ft_strcpy(char *dest, char *src)
 {
