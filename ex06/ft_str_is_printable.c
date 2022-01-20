@@ -6,7 +6,7 @@
 /*   By: ydumaine <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/19 11:58:03 by ydumaine          #+#    #+#             */
-/*   Updated: 2022/01/19 12:31:54 by ydumaine         ###   ########.fr       */
+/*   Updated: 2022/01/20 20:13:23 by ydumaine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,16 +23,16 @@ int	ft_str_is_printable(char *str)
 	{
 		while (str[i] != '\0')
 		{
-			if (((str[i] >= 1) && (str[i] <= 31)) || (str[i] != 127))
-			{
-				i++;
-				c = 1;
-			}
-			else
+			if (((str[i] >= 1) && (str[i] <= 31)) || (str[i] == 127))
 			{
 				c = 0;
 				return (c);
 				break ;
+			}
+			else
+			{
+				c = 1;
+				i++;
 			}
 		}
 		return (c);
