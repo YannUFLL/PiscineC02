@@ -6,7 +6,7 @@
 /*   By: ydumaine <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/19 13:04:39 by ydumaine          #+#    #+#             */
-/*   Updated: 2022/01/21 13:18:48 by ydumaine         ###   ########.fr       */
+/*   Updated: 2022/01/24 23:41:23 by ydumaine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,11 @@ char	*ft_strcapitalize(char *str)
 		{
 			str[i] = str[i] - 32;
 		}
-		while ((str[i] != 32) && (str[i] != 0) && (str[i] != 59))
+		while ((str[i] >= 47) && (str[i] <= 122))
 		{
-			if ((str[i] == 43) || (str[i] == 45) || (str[i] <= 31))
+			if (str[i] >= 58 && str[i] <= 64)
 				break ;
-			if (str[i] == 127)
+			if (str[i] >= 91 && str[i] <= 97)
 				break ;
 			else if ((str[i + 1] >= 65) && (str[i + 1] <= 90))
 				str[i + 1] = str[i + 1] + 32;

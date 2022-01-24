@@ -13,10 +13,8 @@
 char	*ft_strupcase(char *str)
 {
 	int	i;
-	int	c;
 
 	i = 0;
-	c = 1;
 	while (str[i] != '\0')
 	{
 		if (((str[i] >= 97) && (str[i] <= 122)))
